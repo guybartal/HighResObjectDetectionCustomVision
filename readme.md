@@ -1,23 +1,23 @@
-# split high resolution photos into smaller tiles and upload them into custom vision object detection
+# A tool for splitting high resolution photos into smaller tiles and upload them into custom vision object detection
 
 Microsft Custom Vision service has a file size limit of 6MB for training and 4MB for infrencing,
 it also resizes images to 256x256 so if your goal to detect small objects inside high resolution photos and ypu want to take advantage of transfer learning with super easy service like Microsft Custom Vision then you an use this tool.  
 
 split.py gets the following arguments:
-•	source path (high res photos should be here)
-•	target path (all tiles get generated here)
-•	width of the tile in pixels
-•	height of the tile in pixels
-•	overlapping margin in pixels
+* source path (high res photos should be here)
+* target path (all tiles get generated here)
+* width of the tile in pixels
+* height of the tile in pixels
+* overlapping margin in pixels
 
 
 upload.py gets only the source path where the generated tiles resides.
 
 ## setup
-install python 3.7 (Anaconda is recommended)
-clone this repo
-open Anaconda Prompt
-change directory to your cloned repo
+* install python 3.7 (Anaconda is recommended)
+* clone this repo
+* open Anaconda Prompt
+* change directory to your cloned repo
 pip install -r requirements.txt
 
 ## Usage
