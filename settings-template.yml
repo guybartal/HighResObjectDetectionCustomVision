@@ -1,0 +1,3 @@
+endpoint: <your-custom-vision-endpoint>
+training_key: <your-custom-vision-project-training-key>
+project_id: <your-custom-vision-project-project-id>
