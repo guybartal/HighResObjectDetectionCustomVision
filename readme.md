@@ -25,7 +25,7 @@ pip install -r requirements.txt
 copy all your high resolution photos into "original" folder inside the repo folder
 and run the following command:
 
-    python split.py ./original ./tiles/ 2900 1600 200
+    python split.py ./original ./tiles/ 3000 1600 200
 
 after running this part you can validate that the photos spited to tiles correctly and under 6MB, you can play with the width, height and overlapping margin.
 don't forget to delete tiles before running split.py again.
@@ -35,6 +35,7 @@ to upload the tiles to your custom vision project, rename "settings-template.yml
 endpoint: <your-custom-vision-endpoint>
 training_key: <your-custom-vision-project-training-key>
 project_id: <your-custom-vision-project-project-id>
+batch_size: 10
 ```
 after that just run the following command, and refresh unlabeled images inside custom vision:
 

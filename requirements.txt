@@ -1,3 +1,5 @@
 azure-cognitiveservices-vision-customvision
 Pillow
 PyYAML
+datetime
+math
