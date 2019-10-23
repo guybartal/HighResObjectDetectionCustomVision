@@ -23,7 +23,7 @@ if __name__ == '__main__':
         sys.exit(1)
 
     with open("settings.yml", 'r') as ymlfile:
-        settings = yaml.load(ymlfile)
+        settings = yaml.load(ymlfile, Loader=yaml.FullLoader)
 
     start = datetime.datetime.now()
     print(f'connecting to custom vision project')
